@@ -20,7 +20,6 @@ export default function Home() {
             <a
               href="https://hsxzrhetghnnifprcnsa.supabase.co/storage/v1/object/sign/link/CV_ganeshKolavennu.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJsaW5rL0NWX2dhbmVzaEtvbGF2ZW5udS5wZGYiLCJpYXQiOjE2MjczMDI2MzksImV4cCI6MTk0MjY2MjYzOX0.FzVYkvc43tL8EUZ_fTsJn3U7s2JMrZuNKD4y42IfLp8"
               className="text-indigo-500 text-2xl"
-              target="_blank"
             >
               Resume
             </a>
