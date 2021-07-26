@@ -28,16 +28,17 @@ export default function Home() {
                 I am Ganesh Kolavennu.
               </li>
               <li className="text-lg md:text-2xl mt-5">
-                I am currently a computer science student.
+                Presently I am a Computer Science student.
               </li>
               <li className="text-lg md:text-2xl mt-5">
-                I Love learning new things, and into web dev.
+                I Love learning new things, and I am into web development.
               </li>
               <li className="text-lg md:text-2xl mt-5">
-                Also exploring new fields in computer science.
+                I also like to explore new fields in computer science.
               </li>
               <li className="text-lg md:text-2xl mt-5">
-                Currently working on a e-commerce site and learning Nextjs.
+                I am Currently working on an e-commerce site and learning
+                Nextjs.
               </li>
             </ul>
           </div>
