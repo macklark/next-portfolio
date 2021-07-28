@@ -16,7 +16,7 @@ export default function Contact() {
       <Navbar />
       <section className="flex justify-center">
         <div className="grid grid-cols-2 gap-4 mt-20">
-          <div className="bg-black p-10 rounded hover:bg-gray-900">
+          <div className="bg-black p-10 rounded hover:bg-gray-900 dark:border-2 dark:border-white">
             <a href="https://github.com/macklark">
               <Image src={gitHub} alt="github icon" width={100} height={100} />
             </a>

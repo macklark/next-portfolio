@@ -5,7 +5,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <header className="bg-white">
+    <header className="bg-white dark:bg-black">
       <Head>
         <title>Ganesh Kolavennu | Home</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6">
         <div className="flex flex-col items-center w-full md:flex-row md:w-1/2">
           <div className="max-w-lg md:mx-12 md:order-2">
-            <h1 className="text-3xl font-medium tracking-wide text-gray-800 dark:text-white lg:text-8xl md:text-6xl">
+            <h1 className="text-3xl font-medium tracking-wide text-gray-800 lg:text-8xl md:text-6xl dark:text-white">
               Hello👋
             </h1>
             <a
@@ -24,19 +24,19 @@ export default function Home() {
               Resume
             </a>
             <ul className="mt-4 text-gray-600">
-              <li className="text-lg md:text-2xl mt-10">
+              <li className="text-lg md:text-2xl mt-10 dark:text-white">
                 I am Ganesh Kolavennu.
               </li>
-              <li className="text-lg md:text-2xl mt-5">
+              <li className="text-lg md:text-2xl mt-5 dark:text-white">
                 Presently I am a Computer Science student.
               </li>
-              <li className="text-lg md:text-2xl mt-5">
+              <li className="text-lg md:text-2xl mt-5 dark:text-white">
                 I Love learning new things, and I am into web development.
               </li>
-              <li className="text-lg md:text-2xl mt-5">
+              <li className="text-lg md:text-2xl mt-5 dark:text-white">
                 I also like to explore new fields in computer science.
               </li>
-              <li className="text-lg md:text-2xl mt-5">
+              <li className="text-lg md:text-2xl mt-5 dark:text-white">
                 I am Currently working on an e-commerce site and learning
                 Nextjs.
               </li>
