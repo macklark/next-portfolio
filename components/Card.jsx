@@ -3,8 +3,8 @@ import gitHub from "../public/github.png";
 
 export default function Card({ project }) {
   return (
-    <section className="flex items-center justify-center px-4 bg-white mt-5">
-      <div className="max-w-lg w-full rounded-lg shadow-lg p-4">
+    <section className="flex items-center justify-center px-4 bg-white mt-5 dark:bg-black">
+      <div className="max-w-lg w-full rounded-lg shadow-lg p-4 dark:border-2 dark:border-white">
         <h3 className="font-semibold text-lg tracking-wide">
           {project.fields.title}
         </h3>
