@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white dark:bg-black">
+    <nav className="bg-white dark:bg-black transition duration-300">
       <div className="container p-6 mx-auto">
         <section className="block text-2xl font-bold text-center text-gray-800 lg:text-3xl hover:text-gray-700">
           <p className="dark:text-white">Ganesh Kolavennu</p>
