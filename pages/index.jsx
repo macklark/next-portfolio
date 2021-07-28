@@ -5,7 +5,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <header className="bg-white dark:bg-black">
+    <header className="bg-white dark:bg-black transition duration-300">
       <Head>
         <title>Ganesh Kolavennu | Home</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
