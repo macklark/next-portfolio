@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import sun from "../public/sun.png";
+import Image from "next/image";
+import moon from "../public/moon.png";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -37,9 +40,13 @@ export default function Navbar() {
           </section>
           <section className="text-gray-800 border-b-2 border-blue-500 mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white dark:text-white dark:border-green-500 dark:hover:bg-green-500">
             {theme === "light" ? (
-              <button onClick={themeHandler}>Dark</button>
+              <button onClick={themeHandler}>
+                <Image src={moon} alt="moon" width={20} height={20} />
+              </button>
             ) : (
-              <button onClick={themeHandler}>Light</button>
+              <button onClick={themeHandler}>
+                <Image src={sun} alt="sun icon" width={20} height={20} />
+              </button>
             )}
           </section>
         </div>
