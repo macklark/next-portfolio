@@ -8,6 +8,9 @@ export default function Home() {
     <header className="bg-white dark:bg-black transition duration-300">
       <Head>
         <title>Ganesh Kolavennu | Home</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Ganesh portfolio" />
+        <meta name="author" content="macklark" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />

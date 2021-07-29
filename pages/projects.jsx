@@ -23,6 +23,9 @@ export default function Skills({ projects }) {
     <div>
       <Head>
         <title>Ganesh Kolavennu | Projects</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Ganesh portfolio" />
+        <meta name="author" content="macklark" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
