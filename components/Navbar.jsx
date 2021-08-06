@@ -26,18 +26,26 @@ export default function Navbar() {
           <p className="dark:text-white">Ganesh Kolavennu</p>
         </section>
         <div className="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
-          <section className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
-            <Link href="/">home</Link>
-          </section>
-          <section className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
-            <Link href="/contact">Contact</Link>
-          </section>
-          <section className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
-            <Link href="/projects">Projects</Link>
-          </section>
-          <section className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
-            <Link href="/skills">Skills</Link>
-          </section>
+          <Link href="/">
+            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+              home
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+              Contact
+            </a>
+          </Link>
+          <Link href="/projects">
+            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+              Projects
+            </a>
+          </Link>
+          <Link href="/skills">
+            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+              Skills
+            </a>
+          </Link>
           <section className="text-gray-800 border-b-2 border-blue-500 mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white dark:text-white dark:border-green-500 dark:hover:bg-green-500">
             {theme === "light" ? (
               <button onClick={themeHandler}>

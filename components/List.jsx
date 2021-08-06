@@ -12,7 +12,7 @@ export default function List({ instance }) {
   };
   return (
     <div className="md:container md:mx-auto flex justify-center">
-      <section className="p-5 w-full md:w-1/2 block shadow dark:border-2 dark:border-white">
+      <section className="p-5 w-full md:w-1/2 block shadow dark:border-2 dark:border-white mb-5">
         <p
           className="text-black text-3xl font-bold cursor-pointer hover:text-blue-400 dark:text-white dark:hover:text-blue-400"
           onClick={clickHandler}
