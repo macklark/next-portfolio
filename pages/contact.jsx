@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar";
 import Image from "next/image";
 import gitHub from "../public/whitegit.png";
 import mail from "../public/mail.png";
-import phone from "../public/phone.png";
 import discord from "../public/discord.png";
+import twitter from "../public/twitter.png";
 import Head from "next/head";
 
 export default function Contact() {
@@ -29,9 +29,18 @@ export default function Contact() {
               <Image src={mail} alt="mail icon" width={100} height={100} />
             </a>
           </div>
-          <div className="bg-blue-500 p-10 rounded">
-            <Image src={phone} alt="phone icon" width={100} height={100} />
-            <p className="text-center mt-5 text-white font-bold">6302767350</p>
+          <div className="bg-blue-500 p-10 rounded hover:bg-blue-400">
+            <a href="https://twitter.com/GKolavennu">
+              <Image
+                src={twitter}
+                alt="twitter icon"
+                width={100}
+                height={100}
+              />
+              <p className="text-center mt-5 text-white font-bold">
+                GKolavennu
+              </p>
+            </a>
           </div>
           <div className="bg-purple-800 p-10 rounded">
             <Image src={discord} alt="discord icon" width={100} height={100} />
