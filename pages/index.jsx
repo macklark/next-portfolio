@@ -17,12 +17,30 @@ export default function Home() {
       <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6">
         <div className="flex flex-col items-center w-full md:flex-row md:w-1/2">
           <div className="max-w-lg md:mx-12 md:order-2">
-            <h1 className="text-3xl font-medium tracking-wide text-gray-800 lg:text-8xl md:text-6xl dark:text-white">
-              Hello👋
-            </h1>
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="text-3xl font-medium tracking-wide text-gray-800 lg:text-8xl md:text-6xl dark:text-white">
+                  Hello👋
+                </h1>
+                <a
+                  href="https://hsxzrhetghnnifprcnsa.supabase.co/storage/v1/object/sign/link/CV_ganeshKolavennu.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJsaW5rL0NWX2dhbmVzaEtvbGF2ZW5udS5wZGYiLCJpYXQiOjE2MjczMDI2MzksImV4cCI6MTk0MjY2MjYzOX0.FzVYkvc43tL8EUZ_fTsJn3U7s2JMrZuNKD4y42IfLp8"
+                  className="text-indigo-500 text-2xl md:hidden"
+                >
+                  Resume
+                </a>
+              </div>
+              <div className="md:hidden">
+                <Image
+                  src={profilePic}
+                  alt="profile pic"
+                  width={110}
+                  height={148}
+                />
+              </div>
+            </div>
             <a
               href="https://hsxzrhetghnnifprcnsa.supabase.co/storage/v1/object/sign/link/CV_ganeshKolavennu.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJsaW5rL0NWX2dhbmVzaEtvbGF2ZW5udS5wZGYiLCJpYXQiOjE2MjczMDI2MzksImV4cCI6MTk0MjY2MjYzOX0.FzVYkvc43tL8EUZ_fTsJn3U7s2JMrZuNKD4y42IfLp8"
-              className="text-indigo-500 text-2xl"
+              className="text-indigo-500 text-2xl hidden md:block"
             >
               Resume
             </a>
@@ -47,13 +65,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-full h-96 md:w-1/2">
+        <div className="hidden md:flex md:items-center md:justify-center md:w-1/2">
           <Image
             src={profilePic}
             alt="profile pic"
             width={400}
             height={530}
             className="rounded"
+            layout="intrinsic"
           />
         </div>
       </div>
