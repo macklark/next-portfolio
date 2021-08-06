@@ -1,6 +1,3 @@
-import Image from "next/image";
-import gitHub from "../public/github.png";
-
 export default function Card({ project }) {
   return (
     <section className="flex items-center justify-center px-4 bg-white mt-5 dark:bg-black transition duration-300">
@@ -12,7 +9,9 @@ export default function Card({ project }) {
         <div className="mt-2">
           {project.fields.doesGithub && (
             <a href={project.fields.link}>
-              <Image src={gitHub} alt="github icon" width={25} height={25} />
+              <p className="text-black dark:text-white hover:text-blue-500 font-bold dark:hover:text-blue-500">
+                Github
+              </p>
             </a>
           )}
         </div>
