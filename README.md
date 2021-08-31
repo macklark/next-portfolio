@@ -1,1 +1,3 @@
-## My profile site using Next JS
+## Next Portfolio
+
+My personal website
