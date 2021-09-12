@@ -3,7 +3,7 @@ import Image from "next/image";
 import gitHub from "../public/whitegit.png";
 import mail from "../public/mail.png";
 import discord from "../public/discord.png";
-import twitter from "../public/twitter.png";
+import linkedin from "../public/linkedin.png";
 import Head from "next/head";
 
 export default function Contact() {
@@ -29,17 +29,15 @@ export default function Contact() {
               <Image src={mail} alt="mail icon" width={100} height={100} />
             </div>
           </a>
-          <a href="https://twitter.com/GKolavennu">
-            <div className="bg-blue-500 p-10 rounded hover:bg-blue-400">
+          <a href="https://www.linkedin.com/in/ganesh-kolavennu-65a809179/">
+            <div className="bg-blue-700 p-10 rounded hover:bg-blue-600">
               <Image
-                src={twitter}
-                alt="twitter icon"
+                src={linkedin}
+                alt="linkedin icon"
                 width={100}
                 height={100}
               />
-              <p className="text-center mt-5 text-white font-bold">
-                GKolavennu
-              </p>
+              <p className="text-center mt-5 text-white font-bold">Ganesh</p>
             </div>
           </a>
           <div className="bg-purple-800 p-10 rounded">
