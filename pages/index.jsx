@@ -3,7 +3,7 @@ import Image from "next/image";
 import profilePic from "../public/pic.jpeg";
 import Head from "next/head";
 
-export default function Home() {
+export default function Home({ router }) {
   return (
     <header className="bg-white dark:bg-black transition duration-300">
       <Head>
