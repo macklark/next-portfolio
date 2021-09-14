@@ -27,22 +27,22 @@ export default function Navbar() {
         </section>
         <div className="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
           <Link href="/">
-            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+            <a className="rounded dark:hover:bg-green-300 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:text-white p-2 hover:transform hover:scale-125 transition duration-400">
               home
             </a>
           </Link>
           <Link href="/contact">
-            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+            <a className="rounded dark:hover:bg-green-300 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:text-white p-2 hover:transform hover:scale-125 transition duration-400">
               Contact
             </a>
           </Link>
           <Link href="/projects">
-            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+            <a className="rounded dark:hover:bg-green-300 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:text-white p-2 hover:transform hover:scale-125 transition duration-400">
               Projects
             </a>
           </Link>
           <Link href="/skills">
-            <a className="text-gray-800 border-b-2 border-blue-500 dark:border-green-500 dark:hover:bg-green-500 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white">
+            <a className="rounded dark:hover:bg-green-300 dark:text-white mx-1.5 sm:mx-6 hover:bg-blue-400 hover:text-white p-2 hover:transform hover:scale-125 transition duration-400">
               Skills
             </a>
           </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
               </button>
             ) : (
               <button onClick={themeHandler}>
-                <Image src={sun} alt="sun icon" width={20} height={20} />
+                <Image src={sun} alt="sun" width={20} height={20} />
               </button>
             )}
           </section>
