@@ -7,8 +7,8 @@ function MyApp({ Component, pageProps, router }) {
     <ThemeProvider attribute="class">
       <motion.div
         key={router.route}
-        initial={{ x: "-100vw" }}
-        animate={{ x: "0vw" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
         <Component {...pageProps} />
