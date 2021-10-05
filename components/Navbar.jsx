@@ -23,7 +23,9 @@ export default function Navbar() {
     <nav className="bg-white dark:bg-black transition duration-300">
       <div className="container p-6 mx-auto">
         <section className="block text-2xl font-bold text-center text-gray-800 lg:text-3xl hover:text-gray-700">
-          <p className="dark:text-white">Ganesh Kolavennu</p>
+          <p className="dark:text-white hover:text-blue-500">
+            Ganesh Kolavennu
+          </p>
         </section>
         <div className="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
           <Link href="/">
