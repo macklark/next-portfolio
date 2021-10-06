@@ -12,14 +12,14 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <div className="container mx-auto max-w-xl mt-5 md:mt-10">
+      <div className="container mx-auto md:max-w-xl mt-14 md:mt-10">
         <div>
           <h1 className="text-6xl font-medium tracking-wide text-gray-800 lg:text-7xl md:text-6xl dark:text-white text-center md:text-left">
             Hello👋
           </h1>
           <div className="flex items-center mt-5 hidden md:flex">
             <a
-              href="https://hsxzrhetghnnifprcnsa.supabase.in/storage/v1/object/sign/link/CV_ganeshKolavennu(1).pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJsaW5rL0NWX2dhbmVzaEtvbGF2ZW5udSgxKS5wZGYiLCJpYXQiOjE2Mjk2ODk2OTAsImV4cCI6MTk0NTA0OTY5MH0.bxEvPgH9-jh3d8KZa3CxcllyMuy1TH68BMqmkGJhH3Y"
+              href="https://hsxzrhetghnnifprcnsa.supabase.in/storage/v1/object/sign/link/CV_ganeshKolavennu.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJsaW5rL0NWX2dhbmVzaEtvbGF2ZW5udS5wZGYiLCJpYXQiOjE2MzM0ODk4MDgsImV4cCI6MTk0ODg0OTgwOH0.Xuhwqx3OxsDHS0URKUtsGnD8_CcIm9KiqWZFkBUAwNs"
               className="text-2xl mr-2 text-blue-600 "
             >
               Resume
