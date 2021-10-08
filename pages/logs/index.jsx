@@ -20,7 +20,7 @@ export async function getStaticProps() {
   };
 }
 
-function Logs({ logs }) {
+const Logs = ({ logs }) => {
   return (
     <>
       <Head>
@@ -57,6 +57,8 @@ function Logs({ logs }) {
       </div>
     </>
   );
-}
+};
+
+Logs.displayName = "Logs";
 
 export default Logs;
