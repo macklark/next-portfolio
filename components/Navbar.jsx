@@ -121,10 +121,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link href="/logs">
-              <a>Logs</a>
+              <a className="text-lg">Logs</a>
             </Link>
           </li>
-          <li className="flex justify-center mt-2">
+          <li className="flex justify-center mt-5 mb-10">
             {theme === "light" ? (
               <button onClick={themeHandler}>
                 <svg

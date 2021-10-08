@@ -6,7 +6,9 @@ export default function Card({ project }) {
           <h3 className="font-semibold text-lg tracking-wide">
             {project.fields.title}
           </h3>
-          <p className="text-gray-500 my-1">{project.fields.description}</p>
+          <p className="dark:text-gray-300 text-gray-600 my-1">
+            {project.fields.description}
+          </p>
         </div>
         <div>
           {project.fields.doesGithub && (
