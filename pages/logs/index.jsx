@@ -20,7 +20,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Logs({ logs }) {
+function Logs({ logs }) {
   return (
     <>
       <Head>
@@ -58,3 +58,5 @@ export default function Logs({ logs }) {
     </>
   );
 }
+
+export default Logs;
