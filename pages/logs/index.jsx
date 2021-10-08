@@ -20,7 +20,7 @@ export async function getStaticProps() {
   };
 }
 
-const Logs = ({ logs }) => {
+function Logs({ logs }) {
   return (
     <>
       <Head>
@@ -39,6 +39,7 @@ const Logs = ({ logs }) => {
                 src={"https:" + log.fields.thumbnail.fields.file.url}
                 width={log.fields.thumbnail.fields.file.details.image.width}
                 height={log.fields.thumbnail.fields.file.details.image.height}
+                alt={log.fields.slug}
               />
               <div className="p-4 mb-2">
                 <h2 className="text-2xl font-bold">{log.fields.title}</h2>
@@ -57,8 +58,6 @@ const Logs = ({ logs }) => {
       </div>
     </>
   );
-};
-
-Logs.displayName = "Logs";
+}
 
 export default Logs;

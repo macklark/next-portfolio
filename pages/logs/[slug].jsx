@@ -39,39 +39,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function LogsPage({ log }) {
-  const richTextOPtions = {
-    renderNode: {
-      [BLOCKS]: (node, children) => {
-        switch (node.type) {
-          case "paragraph":
-            return <p>{children}</p>;
-          case "heading-1":
-            return <h1>{children}</h1>;
-          case "heading-2":
-            return <h2 className="text-3xl">{children}</h2>;
-          case "heading-3":
-            return <h3>{children}</h3>;
-          case "heading-4":
-            return <h4>{children}</h4>;
-          case "heading-5":
-            return <h5>{children}</h5>;
-          case "heading-6":
-            return <h6>{children}</h6>;
-          case "list-item":
-            return <li>{children}</li>;
-          case "blockquote":
-            return <blockquote>{children}</blockquote>;
-          case "code":
-            return <pre>{children}</pre>;
-          case "embedded-entry-block":
-            return <div>{children}</div>;
-          default:
-            return <div>{children}</div>;
-        }
-      },
-    },
-  };
-
   return (
     <div className="container mx-auto max-w-4xl">
       <Head>
@@ -85,9 +52,7 @@ export default function LogsPage({ log }) {
         {log.fields.title}
       </p>
       <div className="mt-10 mx-5">
-        <div>
-          {documentToReactComponents(log.fields.matter, richTextOPtions)}
-        </div>
+        <div>{documentToReactComponents(log.fields.matter)}</div>
       </div>
     </div>
   );
