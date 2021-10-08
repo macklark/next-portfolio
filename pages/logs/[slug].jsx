@@ -63,20 +63,6 @@ export default function LogsPage({ log }) {
             return <blockquote>{children}</blockquote>;
           case "code":
             return <pre>{children}</pre>;
-          case "image":
-            return (
-              <img
-                src={node.data.target.fields.file.url}
-                alt={node.data.target.fields.title}
-              />
-            );
-          case "embedded-asset-block":
-            return (
-              <img
-                src={node.data.target.fields.file.url}
-                alt={node.data.target.fields.title}
-              />
-            );
           case "embedded-entry-block":
             return <div>{children}</div>;
           default:
