@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
           <div className="flex items-center mt-5 hidden md:flex">
             <a
-              href="https://hsxzrhetghnnifprcnsa.supabase.in/storage/v1/object/sign/link/CV_ganeshKolavennu.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJsaW5rL0NWX2dhbmVzaEtvbGF2ZW5udS5wZGYiLCJpYXQiOjE2MzM0ODk4MDgsImV4cCI6MTk0ODg0OTgwOH0.Xuhwqx3OxsDHS0URKUtsGnD8_CcIm9KiqWZFkBUAwNs"
+              href="https://drive.google.com/file/d/1Kb8K5bnTvN-6jjSYWhZzOI27wOhvkCZj/view?usp=sharing"
               className="text-2xl mr-2 text-blue-600 "
             >
               Resume

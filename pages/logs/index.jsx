@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 import { createClient } from "contentful";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -39,12 +40,17 @@ export default function Logs({ logs }) {
                 width={log.fields.thumbnail.fields.file.details.image.width}
                 height={log.fields.thumbnail.fields.file.details.image.height}
               />
-              <div className="p-4">
+              <div className="p-4 mb-2">
                 <h2 className="text-2xl font-bold">{log.fields.title}</h2>
                 <p className="text-gray-700 text-lg mt-5 dark:text-gray-100">
                   {log.fields.description}
                 </p>
               </div>
+              <Link href={`/logs/${log.fields.slug}`}>
+                <a className="p-4 dark:bg-white dark:text-blue-700 bg-blue-400 text-white rounded">
+                  Read More
+                </a>
+              </Link>
             </div>
           </div>
         ))}
