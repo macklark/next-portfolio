@@ -2,7 +2,6 @@ import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import Head from "next/head";
-// import Image from "next/image";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -41,11 +40,13 @@ export async function getStaticProps({ params }) {
 
 const richTextOptions = {
   renderNode: {
-    [BLOCKS.HEADING_2]: (children) => {
+    [BLOCKS.HEADING_2]: (node, children) => {
       return <h2 className="text-4xl font-bold mb-10">{children}</h2>;
+      // return <></>;
     },
-    [BLOCKS.HEADING_3]: (children) => {
+    [BLOCKS.HEADING_3]: (node, children) => {
       return <h3 className="text-3xl font-medium mb-5">{children}</h3>;
+      // return <></>;
     },
     [BLOCKS.PARAGRAPH]: (node, children) => {
       if (node.content[0].marks[0] === undefined) {
@@ -60,7 +61,7 @@ const richTextOptions = {
         );
       }
     },
-    [BLOCKS.UL_LIST]: (children) => {
+    [BLOCKS.UL_LIST]: (node, children) => {
       return <ul className="list-disc pl-5">{children}</ul>;
     },
   },
@@ -80,9 +81,7 @@ export default function LogsPage({ log }) {
         {log.fields.title}
       </p>
       <div className="mt-10 mx-5">
-        <div>
-          {documentToReactComponents(log.fields.matter, richTextOptions)}
-        </div>
+        {documentToReactComponents(log.fields.matter, richTextOptions)}
       </div>
     </div>
   );

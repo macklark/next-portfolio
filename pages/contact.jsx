@@ -11,7 +11,7 @@ export default function Contact() {
     <div>
       <Head>
         <title>Ganesh Kolavennu | Contact</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="Ganesh portfolio" />
         <meta name="author" content="macklark" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

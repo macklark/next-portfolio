@@ -25,7 +25,7 @@ function Logs({ logs }) {
     <>
       <Head>
         <title>Ganesh Kolavennu | Logs</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="Ganesh portfolio" />
         <meta name="author" content="macklark" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
