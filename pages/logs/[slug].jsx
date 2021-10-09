@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { BLOCKS } from "@contentful/rich-text-types";
 import Head from "next/head";
 // import Image from "next/image";
 
@@ -41,10 +41,10 @@ export async function getStaticProps({ params }) {
 
 const richTextOptions = {
   renderNode: {
-    [BLOCKS.HEADING_2]: (node, children) => {
+    [BLOCKS.HEADING_2]: (children) => {
       return <h2 className="text-4xl font-bold mb-10">{children}</h2>;
     },
-    [BLOCKS.HEADING_3]: (node, children) => {
+    [BLOCKS.HEADING_3]: (children) => {
       return <h3 className="text-3xl font-medium mb-5">{children}</h3>;
     },
     [BLOCKS.PARAGRAPH]: (node, children) => {
@@ -60,7 +60,7 @@ const richTextOptions = {
         );
       }
     },
-    [BLOCKS.UL_LIST]: (node, children) => {
+    [BLOCKS.UL_LIST]: (children) => {
       return <ul className="list-disc pl-5">{children}</ul>;
     },
   },
