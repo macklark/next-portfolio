@@ -41,11 +41,19 @@ export async function getStaticProps({ params }) {
 const richTextOptions = {
   renderNode: {
     [BLOCKS.HEADING_2]: (node, children) => {
-      return <h2 className="text-4xl font-bold mb-10">{children}</h2>;
+      return (
+        <h2 className="text-4xl font-bold mb-10" id={node.content[0].nodeType}>
+          {children}
+        </h2>
+      );
       // return <></>;
     },
     [BLOCKS.HEADING_3]: (node, children) => {
-      return <h3 className="text-3xl font-medium mb-5">{children}</h3>;
+      return (
+        <h3 className="text-3xl font-medium mb-5" id={node.content[0].nodeType}>
+          {children}
+        </h3>
+      );
       // return <></>;
     },
     [BLOCKS.PARAGRAPH]: (node, children) => {
@@ -62,7 +70,11 @@ const richTextOptions = {
       }
     },
     [BLOCKS.UL_LIST]: (node, children) => {
-      return <ul className="list-disc pl-5">{children}</ul>;
+      return (
+        <ul className="list-disc pl-5" id={node.content[0].nodeType}>
+          {children}
+        </ul>
+      );
     },
   },
 };
