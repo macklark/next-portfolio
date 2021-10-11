@@ -52,7 +52,7 @@ function LogsPage({ log }) {
       <h1 className="mt-10 text-center md:text-4xl text-2xl font-bold mb-10">
         {log.fields.title}
       </h1>
-      <div className="mt-10 mx-5" className={[styles.matter]}>
+      <div className="mt-10 mx-5" className={styles.matter}>
         {documentToReactComponents(log.fields.matter)}
       </div>
     </div>
