@@ -53,7 +53,7 @@ export default function Navbar() {
                 Logs
               </a>
             </Link>
-            <section className="text-gray-800 mx-1.5 sm:mx-6 hover:bg-blue-400 hover:border-white p-2 hover:text-white dark:text-white dark:hover:bg-green-500">
+            <section className="text-gray-900 mx-1.5 sm:mx-6 p-2 dark:bg-gray-800 rounded-md border-2 dark:border-gray-700 dark:hover:bg-gray-600">
               {theme === "light" ? (
                 <button onClick={themeHandler}>
                   <svg
