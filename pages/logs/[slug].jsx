@@ -46,7 +46,6 @@ const richTextOptions = {
           {children}
         </h2>
       );
-      // return <></>;
     },
     [BLOCKS.HEADING_3]: (node, children) => {
       return (
@@ -54,7 +53,6 @@ const richTextOptions = {
           {children}
         </h3>
       );
-      // return <></>;
     },
     [BLOCKS.PARAGRAPH]: (node, children) => {
       if (node.content[0].marks[0] === undefined) {
@@ -79,7 +77,7 @@ const richTextOptions = {
   },
 };
 
-export default function LogsPage({ log }) {
+function LogsPage({ log }) {
   return (
     <div className="container mx-auto max-w-4xl">
       <Head>
@@ -98,3 +96,5 @@ export default function LogsPage({ log }) {
     </div>
   );
 }
+
+export default LogsPage;
