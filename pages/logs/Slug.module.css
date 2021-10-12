@@ -39,3 +39,7 @@
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
   border-radius: 0.25rem;
 }
+
+.matter a {
+  color: #00bcd4;
+}

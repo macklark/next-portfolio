@@ -1,6 +1,5 @@
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-// import { BLOCKS } from "@contentful/rich-text-types";
 import Head from "next/head";
 import styles from "./Slug.module.css";
 
