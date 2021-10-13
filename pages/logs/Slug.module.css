@@ -29,17 +29,31 @@
   margin-bottom: 2.5rem;
 }
 
-.matter code {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
-  border-radius: 0.25rem;
-}
-
 .matter a {
   color: #00bcd4;
+}
+
+.matter code {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border-radius: 0.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .matter code {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+    border-radius: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
