@@ -53,9 +53,12 @@ export default function Navbar() {
                 Logs
               </a>
             </Link>
-            <section className="text-gray-900 mx-1.5 sm:mx-6 p-2 dark:bg-gray-800 rounded-md border-2 dark:border-gray-700 dark:hover:bg-gray-600">
+            <section
+              className="text-gray-900 mx-1.5 sm:mx-6 p-2 dark:bg-gray-800 rounded-md border-2 dark:border-gray-700 dark:hover:bg-gray-600 cursor-pointer hover:bg-gray-100"
+              onClick={themeHandler}
+            >
               {theme === "light" ? (
-                <button onClick={themeHandler}>
+                <button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -66,7 +69,7 @@ export default function Navbar() {
                   </svg>
                 </button>
               ) : (
-                <button onClick={themeHandler}>
+                <button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
