@@ -36,7 +36,7 @@ export default function Home() {
           </div>
           <div className="text-center md:hidden mt-5">
             <a
-              href="https://hsxzrhetghnnifprcnsa.supabase.in/storage/v1/object/sign/link/CV_ganeshKolavennu(1).pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJsaW5rL0NWX2dhbmVzaEtvbGF2ZW5udSgxKS5wZGYiLCJpYXQiOjE2Mjk2ODk2OTAsImV4cCI6MTk0NTA0OTY5MH0.bxEvPgH9-jh3d8KZa3CxcllyMuy1TH68BMqmkGJhH3Y"
+              href="https://drive.google.com/file/d/1Kb8K5bnTvN-6jjSYWhZzOI27wOhvkCZj/view?usp=sharing"
               className="text-2xl mr-2 text-blue-600 "
             >
               Resume
