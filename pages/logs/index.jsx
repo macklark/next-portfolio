@@ -31,7 +31,7 @@ function Logs({ logs }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <div className="container mx-auto md:max-w-5xl mt-10 grid grid-cols-1 md:grid-cols-3">
+      <div className="container mx-auto md:max-w-5xl mt-10 grid grid-cols-1 md:grid-cols-3 md:gap-6">
         {logs.map((log) => (
           <div className="col-span-1 m-5 md:m-0" key={log.sys.id}>
             <div className="bg-white rounded-lg shadow-lg dark:bg-gray-800">
