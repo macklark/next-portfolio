@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -56,7 +57,7 @@ export default function Home() {
               I also like to explore new fields in computer science.
             </li>
             <li className="text-lg md:text-2xl mt-5 dark:text-white">
-              I am Currently working on an e-commerce site and learning Nextjs.
+              Completed building next-commerce. Check here <Link href="https://github.com/macklark/next-commerce">next-commerce</Link>
             </li>
           </ul>
         </div>
