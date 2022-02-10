@@ -57,7 +57,7 @@ export default function Home() {
               I also like to explore new fields in computer science.
             </li>
             <li className="text-lg md:text-2xl mt-5 dark:text-white">
-              Completed building next-commerce. Check here <Link href="https://github.com/macklark/next-commerce">next-commerce</Link>
+              Completed building next-commerce. Check here <Link href="https://github.com/macklark/next-commerce"><a className="text-blue-500 hover:underline">next-commerce</a></Link>
             </li>
           </ul>
         </div>
